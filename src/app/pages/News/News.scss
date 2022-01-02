@@ -1,0 +1,65 @@
+.aside-card {
+    flex-basis: 750px;
+
+    @media (max-width: 1200px) {
+        width: calc(100vw - 6rem);
+        flex-basis: 0;
+    }
+
+    .card-wrapper {
+        margin: 0 0 1rem 0;
+        max-width: calc(100vw - 5rem);
+        max-height: 628px;
+        min-height: 425px;
+    }
+}
+
+.main-feed {
+    & > div {
+        flex-basis: 350px;
+        max-width: 350px;
+        min-height: 425px;
+        &:not(:last-of-type) {
+            margin: 0 1.25rem 2.5rem 1.25rem;
+        }
+
+        &:last-of-type {
+            margin: 0 0 2.5rem 0.8rem;
+        }
+
+        @media (max-width: 1200px) {
+            &:first-of-type {
+                margin: 0 1.25rem 2.5rem 0;
+            }
+        }
+
+        @media (max-width: 800px) {
+            max-width: calc(100vw - 5rem);
+            height: 425px;
+            &:nth-of-type(n) {
+                margin: 0 0 1rem 0;
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+section {
+    width: 100%;
+    div.main-feed {
+        display: flex;
+        width: 100%;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+}

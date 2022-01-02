@@ -1,0 +1,44 @@
+.search-wrapper {
+    flex-basis: 280px;
+    color: #fff;
+    background: #191818;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 600px) {
+        flex-basis: 0;
+        margin-top: 1rem;
+    }
+
+    .icon {
+        position: absolute;
+        left: 1rem;
+    }
+
+    & > input {
+        flex: 1;
+        max-width: 280px;
+        padding: 0.5rem 0.2rem 0.5rem 2.5rem;
+        background: transparent;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+
+        &:focus {
+            outline: 1px solid palevioletred;
+        }
+    }
+
+    .search-dialog {
+        width: calc(100% + 50%);
+        transform: translate3d(-26%, 0, 0);
+        display: block;
+        padding: 1rem;
+        background: #3c3c3c;
+        position: absolute;
+        top: 2rem;
+        z-index: 100;
+    }
+}

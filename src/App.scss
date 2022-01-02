@@ -1,0 +1,43 @@
+body {
+    background: #242525;
+    font-family: 'Ubuntu', sans-serif;
+
+    .icon {
+        display: inline-block;
+        width: 18.29px;
+        height: 18.29px;
+        border-radius: 50%;
+        cursor: pointer;
+        svg {
+            fill: #fff;
+        }
+    }
+
+    header {
+        margin: 0 0 1rem 0;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        padding-block-start: 0;
+        padding-block-end: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

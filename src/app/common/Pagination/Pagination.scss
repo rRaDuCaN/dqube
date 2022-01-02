@@ -1,0 +1,45 @@
+.pagination-wrapper {
+    color: #fff;
+    width: calc(100vw - (55% - 6rem));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 auto;
+    font-size: 10px;
+
+    .items-amount {
+        display: inherit;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        margin: 1rem 0 0 0;
+        justify-content: center;
+
+        .items-amount {
+            display: none;
+        }
+    }
+
+    .pagination-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            border-radius: 16px;
+            padding: 0.5rem 2rem;
+            background: #3c3c3c;
+            color: #fff;
+            border: none;
+            font-size: 10px;
+
+            &:disabled {
+                color: rgba(#fff, 0.5);
+            }
+
+            &:last-of-type {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
